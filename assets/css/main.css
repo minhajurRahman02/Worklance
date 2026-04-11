@@ -1,42 +1,113 @@
 @import "tailwindcss";
 
-*{
+* {
     font-family: "Poppins", sans-serif;
 }
 
-:root{
+:root {
     --primary-color: #145DA0;
     --primary-hovered-color: #10487c;
 }
 
-nav{
-    border: 2px solid black;
+.heading-font-1 {
+    font-size: 48px;
+    font-weight: 800;
 }
 
-#nav-logo{
-    border: 2px solid black;
+.heading-font-2 {
+    font-size: 36px;
+    font-weight: 700;
 }
 
-.primary-btn{
-    border: none;
+.heading-font-3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.regular-font-1 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.regular-font-2 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.regular-font-3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.primary-btn {
+    border: 2px solid var(--primary-color);
     background-color: var(--primary-color);
     color: white;
     padding: 5px 20px;
     border-radius: 8px;
+    transition: 0.2s ease-in-out;
 }
 
-.primary-btn:hover{
+.primary-btn:hover {
     background-color: var(--primary-hovered-color);
     cursor: pointer;
 }
 
-#login-btn{
+.secondary-btn {
+    border: 2px solid var(--primary-color);
+    background-color: white;
     color: var(--primary-color);
+    padding: 5px 20px;
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
 }
 
-.nav-links:hover{
-    color: var(--primary-color);
+.secondary-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* nav {
+    border: 2px solid black;
+} */
+
+header {
+    background-image: url(../images/banner-bg-img.png);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-links {
     transition: 0.3s ease-in-out;
 }
 
+/* #nav-logo {
+    border: 2px solid black;
+} */
 
+#login-btn {
+    color: var(--primary-color);
+}
+
+.nav-links:hover {
+    color: var(--primary-color);
+}
+
+.banner-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+}
+
+.banner-card-1 {
+    transform: translateY(200px) translateX(-40px);
+}
+
+.banner-card-2 {
+    transform: translateY(-30px) translateX(-40px);
+}
