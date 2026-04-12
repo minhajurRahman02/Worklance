@@ -105,9 +105,15 @@ header {
 }
 
 .banner-card-1 {
-    transform: translateY(200px) translateX(-40px);
+    transform: translateY(200px) translateX(-120px);
+    width: 50%;
 }
 
 .banner-card-2 {
     transform: translateY(-30px) translateX(-40px);
+}
+
+.bi-briefcase-fill {
+    font-size: x-large;
+    color: #5d423b;
 }
