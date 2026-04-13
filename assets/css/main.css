@@ -163,13 +163,28 @@ header {
     background-color: var(--secondary-color);
 }
 
+.latest-jobs-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-items: baseline; */
+    /* align-items: center; */
+    gap: 30px;
+}
+
+.job-nav{
+    /* border: 2px solid black; */
+    height: 250px;
+    overflow: auto;
+}
+
 .job-categories{
     display: flex;
     gap: 10px;
     align-items: center;
-    padding: 5px 0px;
+    padding: 7px 0px;
     transition: 0.3s ease-in-out;
     margin: 5px 0;
+    width: fit-content;
 }
 
 .job-categories:hover{
@@ -177,6 +192,7 @@ header {
     background-color: #b4b4b4;
     border-radius: 12px;
     padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
 }
 
@@ -187,3 +203,94 @@ header {
     border-radius: 10px;
 }
 
+.display-job-category{
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.display-job-category p{
+    padding: 8px 15px;
+    color: white;
+    background-color: #0146B1;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.display-job-1{
+    /* border: 2px solid black; */
+    background: linear-gradient(160deg, rgba(0, 56, 240, 0.94) 5.04%, rgba(41, 157, 242, 0.75) 98.97%);
+    border-radius: 15px;
+}
+
+.display-job-2{
+    border: 1px solid #b6b6b6;
+    background: transparent;
+    border-radius: 15px;
+}
+
+.display-job-amount{
+    color: #5AFEF4;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.company-logo{
+    background-color: white;
+    border-radius: 10px;
+}
+
+.display-job-count{
+    background-color: #5AFEF4;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.display-job-heading{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.display-job-count-2{
+    background-color: #b6b6b6;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.display-job-amount-2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.display-job-category-2{
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.display-job-category-2 p{
+    padding: 8px 15px;
+    background-color: #b6b6b6;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.company-logo-2{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.display-job-see-more{
+    color: rgb(80, 80, 80);
+    text-decoration: underline;
+    transition: 0.3s ease-in-out;
+}
+
+.display-job-see-more:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
