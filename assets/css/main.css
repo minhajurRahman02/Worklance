@@ -156,3 +156,34 @@ header {
 .top-freelancer-card-img{
     width: 100%;
 }
+
+/* latest job section */
+
+.latest-jobs{
+    background-color: var(--secondary-color);
+}
+
+.job-categories{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 0px;
+    transition: 0.3s ease-in-out;
+    margin: 5px 0;
+}
+
+.job-categories:hover{
+    color: var(--primary-color);
+    background-color: #b4b4b4;
+    border-radius: 12px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.num-of-jobs{
+    background-color: var(--primary-color);
+    padding: 2px 5px;
+    color: white;
+    border-radius: 10px;
+}
+
