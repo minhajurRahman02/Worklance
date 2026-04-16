@@ -439,12 +439,29 @@ header {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    border-radius: 15px;
     background: linear-gradient(160deg, rgba(0, 56, 240, 0.94) 5.04%, rgba(41, 157, 242, 0.75) 98.97%);
 }
 
 .get-started-img{
     width: 60%;
     margin: 0 auto;
-    scale: 2;
-    box-shadow: 10px 10px 10px #919191;
+    scale: 1.6;
+    /* box-shadow: 10px 10px 10px #919191; */
+}
+
+.get-started-btn{
+    color: var(--primary-color);
+    background-color: white;
+    border: none;
+    box-shadow: 4px 4px 4px #0c3a64;
+    transition: 0.3s ease-in-out;
+}
+
+.get-started-btn:hover{
+    scale: 1.06;
+    color: var(--primary-color);
+    background-color: white;
+    border: none;
+    box-shadow: 5px 5px 10px #0c3a64;
 }
