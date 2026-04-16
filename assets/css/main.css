@@ -349,28 +349,28 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.bi-arrow-left{
+.bi-arrow-left {
     color: var(--primary-color);
 }
 
-.bi-arrow-left:hover{
+.bi-arrow-left:hover {
     color: var(--secondary-color);
     background-color: var(--primary-color);
     cursor: pointer;
 }
 
-.bi-arrow-right{
+.bi-arrow-right {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 }
 
-.bi-arrow-right:hover{
+.bi-arrow-right:hover {
     background-color: var(--primary-hovered-color);
     cursor: pointer;
     border-color: var(--primary-hovered-color)
 }
 
-.comment{
+.comment {
     width: 300px;
     align-items: center;
     text-align: center;
@@ -380,54 +380,71 @@ header {
     transition: 0.4s ease-in-out;
 }
 
-.comment:hover{
+.comment:hover {
     background-color: rgb(243, 243, 243);
     box-shadow: 5px 5px 5px #919191;
     scale: 1.02;
     cursor: pointer;
 }
 
-.comment-body{
+.comment-body {
     border-top: 1px solid #919191;
     border-bottom: 1px solid #919191;
     /* border-radius: 15px; */
 }
 
-.border-line{
+.border-line {
     height: 350px;
     width: 1px;
     background-color: #919191;
 }
 
-.comment-comma-1{
+.comment-comma-1 {
     font-size: large;
     font-weight: 800;
     color: #00A79D;
 }
 
-.comment-comma-2{
+.comment-comma-2 {
     font-size: large;
     font-weight: 800;
     color: #966AF5;
 }
 
-.comment-comma-3{
+.comment-comma-3 {
     font-size: large;
     font-weight: 800;
     color: #FCA326;
 }
 
-.comment-quote-1{
+.comment-quote-1 {
     font-size: x-large;
     color: #00A79D;
 }
 
-.comment-quote-2{
+.comment-quote-2 {
     font-size: x-large;
     color: #966AF5;
 }
 
-.comment-quote-3{
+.comment-quote-3 {
     font-size: x-large;
     color: #FCA326;
+}
+
+/* get-started-section */
+
+.get-started-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(160deg, rgba(0, 56, 240, 0.94) 5.04%, rgba(41, 157, 242, 0.75) 98.97%);
+}
+
+.get-started-img{
+    width: 60%;
+    margin: 0 auto;
+    scale: 2;
+    box-shadow: 10px 10px 10px #919191;
 }
