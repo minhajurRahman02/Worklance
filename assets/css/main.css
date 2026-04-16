@@ -319,3 +319,17 @@ header {
     color: var(--primary-color);
     font-size: xx-large;
 }
+
+.talent-see-more{
+    padding: 20px;
+    color: #777777;
+    text-decoration: underline;
+    text-align: right;
+    transition: 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.talent-see-more:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
