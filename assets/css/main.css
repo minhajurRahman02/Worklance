@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: #145DA0;
-    --primary-hovered-color: #10487c;
+    --primary-hovered-color: #0c3a64;
     --secondary-color: #e9e9e9;
 }
 
@@ -52,6 +52,7 @@
 .primary-btn:hover {
     background-color: var(--primary-hovered-color);
     cursor: pointer;
+    border-color: var(--primary-hovered-color);
 }
 
 .secondary-btn {
@@ -132,7 +133,7 @@ header {
     color: rgb(255, 187, 0);
 }
 
-.top-freelancer-card-container{
+.top-freelancer-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
@@ -140,30 +141,30 @@ header {
     justify-content: center;
 }
 
-.top-freelancer-card{
+.top-freelancer-card {
     background-color: var(--secondary-color);
     border-radius: 15px;
     box-shadow: 5px 5px 5px gray;
     transition: 0.2s ease-in-out;
 }
 
-.top-freelancer-card:hover{
+.top-freelancer-card:hover {
     scale: 1.03;
     cursor: pointer;
     box-shadow: 10px 10px 10px rgb(160, 160, 160);
 }
 
-.top-freelancer-card-img{
+.top-freelancer-card-img {
     width: 100%;
 }
 
 /* latest job section */
 
-.latest-jobs{
+.latest-jobs {
     background-color: var(--secondary-color);
 }
 
-.latest-jobs-content{
+.latest-jobs-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* justify-items: baseline; */
@@ -171,13 +172,13 @@ header {
     gap: 30px;
 }
 
-.job-nav{
+.job-nav {
     /* border: 2px solid black; */
     height: 250px;
     overflow: auto;
 }
 
-.job-categories{
+.job-categories {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -187,7 +188,7 @@ header {
     width: fit-content;
 }
 
-.job-categories:hover{
+.job-categories:hover {
     color: var(--primary-color);
     background-color: #b4b4b4;
     border-radius: 12px;
@@ -196,20 +197,20 @@ header {
     cursor: pointer;
 }
 
-.num-of-jobs{
+.num-of-jobs {
     background-color: var(--primary-color);
     padding: 2px 5px;
     color: white;
     border-radius: 10px;
 }
 
-.display-job-category{
+.display-job-category {
     display: flex;
     gap: 5px;
     justify-content: space-around;
 }
 
-.display-job-category p{
+.display-job-category p {
     padding: 8px 15px;
     color: white;
     background-color: #0146B1;
@@ -218,60 +219,60 @@ header {
     font-weight: 500;
 }
 
-.display-job-1{
+.display-job-1 {
     /* border: 2px solid black; */
     background: linear-gradient(160deg, rgba(0, 56, 240, 0.94) 5.04%, rgba(41, 157, 242, 0.75) 98.97%);
     border-radius: 15px;
 }
 
-.display-job-2{
+.display-job-2 {
     border: 1px solid #b6b6b6;
     background: transparent;
     border-radius: 15px;
 }
 
-.display-job-amount{
+.display-job-amount {
     color: #5AFEF4;
     font-size: 24px;
     font-weight: 600;
 }
 
-.company-logo{
+.company-logo {
     background-color: white;
     border-radius: 10px;
 }
 
-.display-job-count{
+.display-job-count {
     background-color: #5AFEF4;
     color: black;
     padding: 5px 10px;
     border-radius: 15px;
 }
 
-.display-job-heading{
+.display-job-heading {
     font-size: larger;
     font-weight: 600;
 }
 
-.display-job-count-2{
+.display-job-count-2 {
     background-color: #b6b6b6;
     color: black;
     padding: 5px 10px;
     border-radius: 15px;
 }
 
-.display-job-amount-2{
+.display-job-amount-2 {
     font-size: 24px;
     font-weight: 600;
 }
 
-.display-job-category-2{
+.display-job-category-2 {
     display: flex;
     gap: 5px;
     justify-content: space-around;
 }
 
-.display-job-category-2 p{
+.display-job-category-2 p {
     padding: 8px 15px;
     background-color: #b6b6b6;
     border-radius: 20px;
@@ -279,31 +280,31 @@ header {
     font-weight: 500;
 }
 
-.company-logo-2{
+.company-logo-2 {
     background-color: black;
     border-radius: 20px;
 }
 
-.display-job-see-more{
+.display-job-see-more {
     color: rgb(80, 80, 80);
     text-decoration: underline;
     transition: 0.3s ease-in-out;
 }
 
-.display-job-see-more:hover{
+.display-job-see-more:hover {
     color: var(--primary-color);
     cursor: pointer;
 }
 
 /* talent section */
 
-.talent-category-container{
+.talent-category-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-.talent-category{
+.talent-category {
     background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 15px;
@@ -315,12 +316,12 @@ header {
     text-align: center;
 }
 
-.bi-talent{
+.bi-talent {
     color: var(--primary-color);
     font-size: xx-large;
 }
 
-.talent-see-more{
+.talent-see-more {
     padding: 20px;
     color: #777777;
     text-decoration: underline;
@@ -329,7 +330,104 @@ header {
     width: fit-content;
 }
 
-.talent-see-more:hover{
+.talent-see-more:hover {
     color: var(--primary-color);
     cursor: pointer;
+}
+
+/* client's comments section */
+
+.client-comment {
+    background-color: var(--secondary-color);
+}
+
+.bi-arrow-left,
+.bi-arrow-right {
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 5px 9px;
+    transition: 0.3s ease-in-out;
+}
+
+.bi-arrow-left{
+    color: var(--primary-color);
+}
+
+.bi-arrow-left:hover{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.bi-arrow-right{
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.bi-arrow-right:hover{
+    background-color: var(--primary-hovered-color);
+    cursor: pointer;
+    border-color: var(--primary-hovered-color)
+}
+
+.comment{
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: #919191;
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+}
+
+.comment:hover{
+    background-color: rgb(243, 243, 243);
+    box-shadow: 5px 5px 5px #919191;
+    scale: 1.02;
+    cursor: pointer;
+}
+
+.comment-body{
+    border-top: 1px solid #919191;
+    border-bottom: 1px solid #919191;
+    /* border-radius: 15px; */
+}
+
+.border-line{
+    height: 350px;
+    width: 1px;
+    background-color: #919191;
+}
+
+.comment-comma-1{
+    font-size: large;
+    font-weight: 800;
+    color: #00A79D;
+}
+
+.comment-comma-2{
+    font-size: large;
+    font-weight: 800;
+    color: #966AF5;
+}
+
+.comment-comma-3{
+    font-size: large;
+    font-weight: 800;
+    color: #FCA326;
+}
+
+.comment-quote-1{
+    font-size: x-large;
+    color: #00A79D;
+}
+
+.comment-quote-2{
+    font-size: x-large;
+    color: #966AF5;
+}
+
+.comment-quote-3{
+    font-size: x-large;
+    color: #FCA326;
 }
