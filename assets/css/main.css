@@ -516,7 +516,7 @@ footer a:hover {
     border-radius: 50%;
 }
 
-.footer-input{
+.footer-input {
     background-color: white;
     color: black;
     font-weight: 500;
@@ -527,29 +527,29 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-.bi-send-fill{
+.bi-send-fill {
     font-size: x-large;
     color: #2194ff;
     transition: 0.3s ease-in-out;
 }
 
-.bi-send-fill:hover{
+.bi-send-fill:hover {
     scale: 1.2;
     cursor: pointer;
 }
 
-.footer-line{
+.footer-line {
     height: 1px;
     background-color: rgb(150, 150, 150);
 }
 
-.social-icons .bi{
+.social-icons .bi {
     font-size: large;
     margin: 0px 5px;
     transition: 0.3s ease-in-out;
 }
 
-.social-icons .bi:hover{
+.social-icons .bi:hover {
     color: #329cff;
     cursor: pointer;
 }
