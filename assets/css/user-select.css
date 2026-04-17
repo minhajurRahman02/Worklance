@@ -137,9 +137,93 @@ nav li:hover {
 .role:hover {
     cursor: pointer;
     scale: 1.1;
+    color: var(--primary-color);
 }
 
 .role img {
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+/* footer section */
+
+footer {
+    background-color: var(--footer-color);
+}
+
+footer li {
+    padding-bottom: 5px;
+}
+
+footer a {
+    transition: 0.3s ease-in-out;
+}
+
+
+footer a:hover {
+    color: #2194ff;
+    cursor: pointer;
+}
+
+.upper-footer {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.footer-input {
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.bi-send-fill {
+    font-size: x-large;
+    color: #2194ff;
+    transition: 0.3s ease-in-out;
+}
+
+.bi-send-fill:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.footer-line {
+    height: 1px;
+    background-color: rgb(150, 150, 150);
+}
+
+.social-icons .bi {
+    font-size: large;
+    margin: 0px 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons .bi:hover {
+    color: #329cff;
+    cursor: pointer;
+}
+
+.guest-login{
+    transition: 0.3s ease-in-out;
+}
+
+.guest-login:hover{
+    color: var(--primary-color);
 }
