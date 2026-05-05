@@ -95,63 +95,17 @@ body {
     background: linear-gradient(86deg, rgba(180, 198, 217, 1) 0%, rgba(214, 236, 255, 1) 50%, rgba(124, 160, 196, 1) 100%);
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-nav img {
-    width: 25%;
-}
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
 
-nav li {
-    transition: 0.3s ease-in-out;
-}
 
-nav li:hover {
-    color: var(--primary-color);
-}
 
-.content {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px #24272d;
-}
 
-.role {
-    padding: 20px;
-    text-align: center;
-    border: 1px solid rgb(199, 199, 199);
-    border-radius: 15px;
-    transition: 0.2s ease-in-out;
-}
 
-.role:hover {
-    cursor: pointer;
-    scale: 1.1;
-    color: var(--primary-color);
-}
 
-.role img {
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
 
-.guest-login {
-    transition: 0.3s ease-in-out;
-}
 
-.guest-login:hover {
-    color: var(--primary-color);
-}
+
 
 /* footer section */
 
