@@ -41,6 +41,12 @@
     font-weight: 400;
 }
 
+.regular-font-4 {
+    color: rgb(100, 100, 100);
+    font-size: 16px;
+    font-weight: 400;
+}
+
 .footer-heading-font {
     color: white;
     font-size: 16px;
@@ -84,16 +90,66 @@
     cursor: pointer;
 }
 
+body {
+    background: #B4C6D9;
+    background: linear-gradient(86deg, rgba(180, 198, 217, 1) 0%, rgba(214, 236, 255, 1) 50%, rgba(124, 160, 196, 1) 100%);
+}
 
+main {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background-color: white;
+    box-shadow: 5px 5px 10px var(--footer-color);
+    border-radius: 15px;
+    gap: 40px;
+}
 
+.form-head img {
+    width: 200px;
+    border-radius: 50%;
+    padding-bottom: 15px;
+}
 
+form {
+    margin: 20px 20px 5px 20px;
+}
 
+.form-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
 
+form label {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
 
+.form-left div,
+.form-right div {
+    margin-bottom: 20px;
+}
 
+form input {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: 100%;
+}
 
+.right {
+    display: flex;
+    align-items: center;
+}
 
-
+.right img {
+    width: 100%;
+}
 
 
 /* footer section */

@@ -18,9 +18,64 @@
     <title>Login</title>
 </head>
 
-<body>
+<body class="pt-30">
 
-    <main>
+    <main class="w-4/5 mx-auto pt-5 px-5 pb-20 mb-30">
+        <div class="left">
+            <div class="form-head mx-auto text-center w-fit mb-20">
+                <a href="index.html">
+                    <img src="assets/images/worklance_logo.png" alt="">
+                </a>
+                <p style="color: #145DA0;" class="regular-font-2">Sign up into your account</p>
+            </div>
+
+            <form action="">
+                <div class="form-content mb-5">
+                    <div class="form-left">
+                        <div>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Enter your first name">
+                        </div>
+
+                        <div>
+                            <label for="email-id">Email Id:</label>
+                            <input type="text" name="email-id" id="email-id" placeholder="Enter your email">
+                        </div>
+
+                        <div>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="Enter your password">
+                        </div>
+                    </div>
+
+                    <div class="form-right">
+                        <div>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Enter your last name">
+                        </div>
+
+                        <div>
+                            <label for="mobile-no">Mobile No. :</label>
+                            <input type="text" name="mobile-no" id="mobile-no" placeholder="Enter your mobile no.">
+                        </div>
+
+                        <div>
+                            <label for="confirm-password">Confirm Password:</label>
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                placeholder="Re-type your password">
+                        </div>
+                    </div>
+                </div>
+                <button class="primary-btn w-1/3 mb-4">Sign up</button>
+                <div class="have-account flex gap-3">
+                    <p class="regular-font-4">Have an account?</p>
+                    <a style="color: #145DA0;" class="regular-font-4" href="">Login</a>
+                </div>
+            </form>
+        </div>
+        <div class="right">
+            <img src="assets/images/signup-image.png" alt="">
+        </div>
     </main>
 
     <!-- footer section -->
