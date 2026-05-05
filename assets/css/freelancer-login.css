@@ -114,13 +114,13 @@ form {
     margin: 20px 20px 5px 20px;
 }
 
-.form-content {
+/* .form-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
     gap: 20px;
-}
+} */
 
 form label {
     font-size: 16px;
@@ -128,8 +128,7 @@ form label {
     color: var(--primary-color);
 }
 
-.form-left div,
-.form-right div {
+.form-left div {
     margin-bottom: 20px;
 }
 
@@ -142,12 +141,12 @@ form input {
     width: 100%;
 }
 
-.right {
+.left {
     display: flex;
     align-items: center;
 }
 
-.right img {
+.left img {
     width: 100%;
 }
 
