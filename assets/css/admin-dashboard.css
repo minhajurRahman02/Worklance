@@ -55,6 +55,12 @@
     font-weight: 500;
 }
 
+.footer-heading-font-2{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+
 .footer-regular-font {
     color: white;
     font-size: 14px;
@@ -233,6 +239,47 @@ nav div i{
     text-decoration: underline;
 }
 
+.bottom-report{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    justify-items: baseline;
+    align-items: center;
+}
+
+.generate-report{
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.generate-report > *{
+    padding-bottom: 30px;
+}
+
+.upper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.report-btn{
+    color: white;
+    border: 2px solid white;
+    background-color: var(--primary-color);
+    padding: 8px 15px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.report-btn:hover{
+    cursor: pointer;
+    scale: 1.03;
+}
 
 
 
