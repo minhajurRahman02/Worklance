@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/client-dashboard.css">
+    <link rel="icon" href="assets/images/Worklance_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
+    <title>About</title>
+</head>
+
+<body>
+
+    <main>
+        <aside class="">
+            <div class="upper-aside">
+                <a class="aside-logo" href="admin-dashboard.html">
+                    <img class="aside-img" src="assets/images/worklance_logo.png" alt="">
+                </a>
+                <div class="aside-content">
+                    <a href="" class="aside-item">
+                        <i class="bi bi-grid-fill"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-gear-fill"></i>
+                        <p>Manage Profile</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-wallet"></i>
+                        <p>Post Project</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-star-fill"></i>
+                        <p>Your Projects</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-hourglass-split"></i>
+                        <p>Pending Projects</p>
+                    </a>
+                </div>
+            </div>
+            <a class="bottom-aside" href="admin-login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <p>Sign Out</p>
+            </a>
+        </aside>
+
+        <section class="main-content">
+            <nav>
+                <p class="heading-font-3">Hello <span style="color: #145DA0;">Mehrab Hossain!</span></p>
+                <div>
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <a href="">
+                        <i class="bi bi-bell-fill"></i>
+                    </a>
+                    <a href="freelancer-profile.html">
+                        <img src="assets/images/freelancer_profile_image.jpg" alt="">
+                        <p class="regular-font-4">Mehrab Hossain</p>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="project-overview pt-10 mb-15">
+                <div class="pending-projects">
+                    <p class="regular-font-2">Current Projects</p>
+                    <br>
+                    <div class="pending-project-card-container">
+                        <div class="pending-project-card">
+                            <img src="assets/images/banner-card-img-1.svg" alt="">
+                            <p class="regular-font-4">Nicholas Patrick</p>
+                            <p class="regular-font-2">$ 45.00</p>
+                            <p class="regular-font-4">Graphics Design</p>
+                            <a style="color: #145DA0;" href="">See Details</a>
+                        </div>
+
+                        <div class="pending-project-card">
+                            <img src="assets/images/banner-card-img-2.svg" alt="">
+                            <p class="regular-font-4">Cordell Edwards</p>
+                            <p class="regular-font-2">$ 67.00</p>
+                            <p class="regular-font-4">Copy Writing</p>
+                            <a style="color: #145DA0;" href="">See Details</a>
+                        </div>
+
+                        <div class="pending-project-card">
+                            <img src="assets/images/banner-card-img-3.svg" alt="">
+                            <p class="regular-font-4">Derrick Spencer</p>
+                            <p class="regular-font-2">$ 640.00</p>
+                            <p class="regular-font-4">Motion Graphics</p>
+                            <a style="color: #145DA0;" href="">See Details</a>
+                        </div>
+                    </div>
+                    <a class="regular-font-4 text-right" href="">
+                        <p class="pt-3 hover:underline">View All</p>
+                    </a>
+                </div>
+
+
+                <div class="completed-projects">
+                    <p class="regular-font-2">Completed Projects</p>
+                    <br>
+                    <div class="pending-project-card-container">
+                        <div class="pending-project-card">
+                            <img src="assets/images/banner-card-img-1.svg" alt="">
+                            <p class="regular-font-4">Patrick</p>
+                            <p class="regular-font-2">$ 45.00</p>
+                            <p class="regular-font-4">Graphics Design</p>
+                        </div>
+
+                        <div class="pending-project-card">
+                            <img src="assets/images/banner-card-img-2.svg" alt="">
+                            <p class="regular-font-4">Cordell</p>
+                            <p class="regular-font-2">$ 67.00</p>
+                            <p class="regular-font-4">Copy Writing</p>
+                        </div>
+
+                        <div class="pending-project-card">
+                            <img src="assets/images/banner-card-img-3.svg" alt="">
+                            <p class="regular-font-4">Derrick</p>
+                            <p class="regular-font-2">$ 40.00</p>
+                            <p class="regular-font-4">Motion Graphics</p>
+                        </div>
+                    </div>
+                    <a class="regular-font-4 text-right hover:underline" href="">
+                        <p class="pt-3">View All</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="platform-overview mb-15">
+                <div class="platform-card-container">
+                    <div class="platform-card">
+                        <p class="regular-font-4">Completed Projects</p>
+                        <p class="heading-font-3">102</p>
+                        <a href="">See Details</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <p class="regular-font-4">Cancelled Projects</p>
+                        <p class="heading-font-3">6</p>
+                        <a href="">See Details</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <p class="regular-font-4">Ongoing Projects</p>
+                        <p class="heading-font-3">21</p>
+                        <a href="">See Details</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <p class="regular-font-4">Pending Bids</p>
+                        <p class="heading-font-3">15</p>
+                        <a href="">See Details</a>
+                    </div>
+
+                    <div class="platform-card">
+                        <p class="regular-font-4">Total Spent</p>
+                        <p class="heading-font-3">$18k</p>
+                        <a href="">See Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-report mb-15">
+                <div class="revenue-graph w-1/1">
+                    <canvas id="myChart" style="width:100%;"></canvas>
+                    <script>
+                        const xValues = ["January", "February", "March", "April", "May", "June", "July", "August", "September"];
+                        const yValues = [10, 15, 15, 20, 20, 20, 30, 35, 40, 40, 45];
+
+                        const ctx = document.getElementById('myChart');
+
+                        new Chart(ctx, {
+                            type: "line",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    fill: false,
+                                    lineTension: 0,
+                                    backgroundColor: "rgba(0,0,255,1.0)",
+                                    borderColor: "rgba(0,0,255,0.1)",
+                                    data: yValues
+                                }]
+                            },
+                            options: {
+                                plugins: {
+                                    legend: { display: false },
+                                    title: {
+                                        display: true,
+                                        text: "Month vs. Earning",
+                                        font: { size: 15 }
+                                    }
+                                }
+                            }
+                        });
+                    </script>
+                </div>
+
+                <div class="generate-report">
+                    <div class="upper">
+                        <div class="left">
+                            <p class="footer-regular-font">Top Freelancers</p>
+                            <p class="footer-heading-font-2">56</p>
+                            <p class="footer-regular-font">Freelancers submitted their project on time</p>
+                        </div>
+                        <div class="right flex">
+                            <img src="assets/images/banner-card-img-1.svg" alt="">
+                            <img src="assets/images/banner-card-img-2.svg" alt="">
+                            <img src="assets/images/banner-card-img-3.svg" alt="">
+                            <img src="assets/images/banner-card-img-1.svg" alt="">
+                        </div>
+                    </div>
+
+                    <button class="report-btn flex gap-3 justify-center">
+                        <i class="bi bi-star-fill"></i>
+                        <p>Rate Them</p>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="px-10 pt-10 pb-5 footer-regular-font">
+        <div class="w-4/5 mx-auto upper-footer pb-20">
+            <a href="">
+                <img class="footer-img" src="assets/images/worklance_logo.png" alt="">
+            </a>
+            <div class="footer-col-1">
+                <p class="footer-heading-font pb-4">Platform</p>
+                <ul>
+                    <li><a href="">Find Freelancers</a></li>
+                    <li><a href="">Browse Jobs</a></li>
+                    <li><a href="">How It Works</a></li>
+                    <li><a href="">Post a Project</a></li>
+                    <li><a href="">Explore Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <p class="footer-heading-font pb-4">Support & Company</p>
+                <ul>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Report an Issue</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <p class="footer-heading-font pb-2">Subscribe</p>
+                <div class="flex items-center gap-2">
+                    <input class="footer-input" type="email" placeholder="typeYourMail@Email.com">
+                    <i class="bi bi-send-fill"></i>
+                </div>
+                <p>Join our newsletter to stay up to date on features and releases</p>
+            </div>
+        </div>
+        <div class="w-4/5 mx-auto lower-footer">
+            <div class="footer-line mb-5"></div>
+            <div class="footer-bottom flex justify-between items-center">
+                <p class="copyright">&copy; 2026 Worklance. All rights reserved.</p>
+                <div class="social-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-messenger"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
