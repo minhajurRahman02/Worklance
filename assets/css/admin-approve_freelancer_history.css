@@ -200,15 +200,21 @@ nav div i {
     text-decoration: underline;
 }
 
-.pending {
+.approved{
     padding: 1px 10px;
-    background-color: var(--secondary-color);
-    border: 1px solid rgb(190, 190, 190);
-    color: gray;
+    background-color: rgb(105, 192, 105);
+    border: 1px solid green;
+    color: rgb(0, 85, 0);
     border-radius: 50px;
 }
 
-
+.rejected{
+    padding: 1px 10px;
+    background-color: rgb(255, 153, 153);
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(131, 0, 0);
+    border-radius: 50px;
+}
 
 
 
