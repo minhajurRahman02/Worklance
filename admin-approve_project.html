@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/admin-approve_project.css">
+    <link rel="icon" href="assets/images/Worklance_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
+    <title>About</title>
+</head>
+
+<body>
+
+    <main>
+        <aside class="">
+            <div class="upper-aside">
+                <a class="aside-logo" href="admin-dashboard.html">
+                    <img class="aside-img" src="assets/images/worklance_logo.png" alt="">
+                </a>
+                <div class="aside-content">
+                    <a href="" class="aside-item">
+                        <i class="bi bi-grid-fill"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-gear-fill"></i>
+                        <p>Manage Profile</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-person-check-fill"></i>
+                        <p>Approve Freelancers</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-file-earmark-text-fill"></i>
+                        <p>Approve Clients</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-star-fill"></i>
+                        <p>Approve Projects</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-currency-exchange"></i>
+                        <p>Revenue Manage</p>
+                    </a>
+                </div>
+            </div>
+            <a class="bottom-aside" href="admin-login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <p>Sign Out</p>
+            </a>
+        </aside>
+
+        <section class="main-content">
+            <nav>
+                <p class="heading-font-3">User <span style="color: #145DA0;">A-1122334</span></p>
+                <div>
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <a href="">
+                        <i class="bi bi-bell-fill"></i>
+                    </a>
+                    <a href="admin-profile.html">
+                        <i class="bi bi-person-circle"></i>
+                        <p>Admin ABC</p>
+                    </a>
+                </div>
+            </nav>
+            <br>
+            <br>
+
+            <div class="browse-project">
+                <p class="regular-font-2">Find Available Projects</p>
+
+                <div class="project-card-container">
+                    <div class="project-card">
+                        <div class="flex justify-between items-center gap-5 pb-8">
+                            <div class="flex flex-col">
+                                <p class="regular-font-2 pb-2">Video Editing</p>
+                                <p class="category w-fit">Media</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <a class="view-details flex items-center gap-2" href="">
+                                    <i class="bi bi-eye"></i>
+                                    <p>View Details</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <p class="regular-font-4 pb-2">Complete overhaul of the company website with modern design
+                                and improved user experience. </p>
+                            <p style="font-size: 14px; font-weight: 600;">35$ / hr</p>
+                        </div>
+
+                        <div class="flex justify-between items-center gap-2 regular-font-4 mb-8">
+                            <div class="flex gap-1">
+                                <i class="bi bi-calendar-event"></i>
+                                <p>9/11/2025</p>
+                            </div>
+                            <p>Deadline: 21/12/2025</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="">
+                                <button class="w-full action-btn approve">Approve</button>
+                            </a>
+                            <a href="">
+                                <button class="w-full action-btn reject">Reject</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="flex justify-between items-center gap-5 pb-8">
+                            <div class="flex flex-col">
+                                <p class="regular-font-2 pb-2">Video Editing</p>
+                                <p class="category w-fit">Media</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <a class="view-details flex items-center gap-2" href="">
+                                    <i class="bi bi-eye"></i>
+                                    <p>View Details</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <p class="regular-font-4 pb-2">Complete overhaul of the company website with modern design
+                                and improved user experience. </p>
+                            <p style="font-size: 14px; font-weight: 600;">35$ / hr</p>
+                        </div>
+
+                        <div class="flex justify-between items-center gap-2 regular-font-4 mb-8">
+                            <div class="flex gap-1">
+                                <i class="bi bi-calendar-event"></i>
+                                <p>9/11/2025</p>
+                            </div>
+                            <p>Deadline: 21/12/2025</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="">
+                                <button class="w-full action-btn approve">Approve</button>
+                            </a>
+                            <a href="">
+                                <button class="w-full action-btn reject">Reject</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="flex justify-between items-center gap-5 pb-8">
+                            <div class="flex flex-col">
+                                <p class="regular-font-2 pb-2">Video Editing</p>
+                                <p class="category w-fit">Media</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <a class="view-details flex items-center gap-2" href="">
+                                    <i class="bi bi-eye"></i>
+                                    <p>View Details</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <p class="regular-font-4 pb-2">Complete overhaul of the company website with modern design
+                                and improved user experience. </p>
+                            <p style="font-size: 14px; font-weight: 600;">35$ / hr</p>
+                        </div>
+
+                        <div class="flex justify-between items-center gap-2 regular-font-4 mb-8">
+                            <div class="flex gap-1">
+                                <i class="bi bi-calendar-event"></i>
+                                <p>9/11/2025</p>
+                            </div>
+                            <p>Deadline: 21/12/2025</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="">
+                                <button class="w-full action-btn approve">Approve</button>
+                            </a>
+                            <a href="">
+                                <button class="w-full action-btn reject">Reject</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="flex justify-between items-center gap-5 pb-8">
+                            <div class="flex flex-col">
+                                <p class="regular-font-2 pb-2">Video Editing</p>
+                                <p class="category w-fit">Media</p>
+                            </div>
+                            <div class="flex gap-2">
+                                <a class="view-details flex items-center gap-2" href="">
+                                    <i class="bi bi-eye"></i>
+                                    <p>View Details</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <p class="regular-font-4 pb-2">Complete overhaul of the company website with modern design
+                                and improved user experience. </p>
+                            <p style="font-size: 14px; font-weight: 600;">35$ / hr</p>
+                        </div>
+
+                        <div class="flex justify-between items-center gap-2 regular-font-4 mb-8">
+                            <div class="flex gap-1">
+                                <i class="bi bi-calendar-event"></i>
+                                <p>9/11/2025</p>
+                            </div>
+                            <p>Deadline: 21/12/2025</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="">
+                                <button class="w-full action-btn approve">Approve</button>
+                            </a>
+                            <a href="">
+                                <button class="w-full action-btn reject">Reject</button>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="primary-btn" href="">
+                    View All
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="px-10 pt-10 pb-5 footer-regular-font">
+        <div class="w-4/5 mx-auto upper-footer pb-20">
+            <a href="">
+                <img class="footer-img" src="assets/images/worklance_logo.png" alt="">
+            </a>
+            <div class="footer-col-1">
+                <p class="footer-heading-font pb-4">Platform</p>
+                <ul>
+                    <li><a href="">Find Freelancers</a></li>
+                    <li><a href="">Browse Jobs</a></li>
+                    <li><a href="">How It Works</a></li>
+                    <li><a href="">Post a Project</a></li>
+                    <li><a href="">Explore Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <p class="footer-heading-font pb-4">Support & Company</p>
+                <ul>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Report an Issue</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <p class="footer-heading-font pb-2">Subscribe</p>
+                <div class="flex items-center gap-2">
+                    <input class="footer-input" type="email" placeholder="typeYourMail@Email.com">
+                    <i class="bi bi-send-fill"></i>
+                </div>
+                <p>Join our newsletter to stay up to date on features and releases</p>
+            </div>
+        </div>
+        <div class="w-4/5 mx-auto lower-footer">
+            <div class="footer-line mb-5"></div>
+            <div class="footer-bottom flex justify-between items-center">
+                <p class="copyright">&copy; 2026 Worklance. All rights reserved.</p>
+                <div class="social-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-messenger"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
