@@ -43,7 +43,7 @@
     font-weight: 400;
 }
 
-.regular-font-4{
+.regular-font-4 {
     color: var(--faded-font-color);
     font-size: 16px;
     font-weight: 400;
@@ -55,7 +55,7 @@
     font-weight: 500;
 }
 
-.footer-heading-font-2{
+.footer-heading-font-2 {
     color: white;
     font-size: 36px;
     font-weight: 600;
@@ -98,12 +98,12 @@
     cursor: pointer;
 }
 
-main{
+main {
     background-color: var(--primary-color);
     display: flex;
 }
 
-aside{
+aside {
     padding: 30px;
     width: 25%;
     display: flex;
@@ -112,18 +112,18 @@ aside{
 }
 
 
-.aside-img{
+.aside-img {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.aside-content{
+.aside-content {
     padding-top: 20px;
     border-top: 1px solid var(--secondary-color);
 }
 
-aside a{
+aside a {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -133,16 +133,16 @@ aside a{
     transition: 0.3s ease-in-out;
 }
 
-aside a:hover{
+aside a:hover {
     background-color: white;
     color: var(--primary-color);
 }
 
-.aside-logo:hover{
+.aside-logo:hover {
     background-color: var(--primary-color);
 }
 
-.main-content{
+.main-content {
     padding: 30px 40px;
     width: 100%;
     background-color: white;
@@ -150,136 +150,234 @@ aside a:hover{
     border-bottom-left-radius: 15px;
 }
 
-input{
+input {
     background-color: var(--secondary-color);
     padding: 5px 20px;
     border: none;
     border-radius: 20px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav div,
-nav div a{
+nav div a {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 
-nav div i{
+nav div i {
     color: var(--primary-color);
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.project-overview{
+nav img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.wallet-page {
+    padding: 30px;
+}
+
+/* Overview Cards */
+
+.wallet-overview {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    justify-items: baseline;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    margin-bottom: 30px;
 }
 
-.pending-projects{
-    width: 100%;
+.wallet-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    padding: 25px;
+    transition: 0.3s ease;
 }
 
-.pending-project-card-container{
-    display: grid;
-    gap: 20px;
+.wallet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-.pending-project-card{
+.card-title {
+    color: var(--faded-font-color);
+    margin-bottom: 10px;
+}
+
+.wallet-card h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: var(--footer-color);
+}
+
+.wallet-card span {
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+/* Sections */
+
+.chart-section,
+.transactions-section,
+.withdraw-card,
+.payment-methods-card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 30px;
+}
+
+.section-header {
     display: flex;
-    gap: 10px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    border: 1px solid var(--border-color);
+    margin-bottom: 25px;
+}
+
+.section-header h2 {
+    font-size: 24px;
+    color: var(--footer-color);
+}
+
+.section-header p {
+    color: var(--faded-font-color);
+    margin-top: 5px;
+}
+
+.section-header select {
+    padding: 10px 15px;
     border-radius: 10px;
-    transition: 0.3s ease-in-out;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+
+/* Chart */
+
+.chart-container {
+    height: 350px;
+}
+
+/* Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f2f5f9;
+}
+
+th,
+td {
     text-align: left;
+    padding: 18px;
 }
 
-.pending-project-card a:hover{
-    text-decoration: underline;
+th {
+    color: var(--footer-color);
+    font-weight: 600;
 }
 
-.completed-projects{
-    width: 100%;
+td {
+    color: var(--faded-font-color);
+    border-top: 1px solid var(--border-color);
 }
 
-
-.platform-card-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
+.status {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
-.platform-card{
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    text-align: center; 
-}
-
-.platform-card *{
-    padding-bottom: 10px;
-}
-
-.platform-card a{
+.completed {
+    background: rgba(20, 93, 160, 0.1);
     color: var(--primary-color);
 }
 
-.platform-card a:hover{
-    text-decoration: underline;
+.pending {
+    background: rgba(255, 193, 7, 0.15);
+    color: #d69e00;
 }
 
-.bottom-report{
+.processing {
+    background: rgba(255, 87, 34, 0.15);
+    color: #e64a19;
+}
+
+/* Bottom Grid */
+
+.wallet-bottom-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    justify-items: baseline;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 25px;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select {
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--primary-color);
+}
+
+
+/* Payment Methods */
+
+.method-card {
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 }
 
-.generate-report{
-    background-color: var(--primary-color);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px var(--primary-color);
+.method-card h4 {
+    margin-bottom: 5px;
+    color: var(--footer-color);
 }
 
-.generate-report > *{
-    padding-bottom: 30px;
+.method-card p {
+    color: var(--faded-font-color);
+    font-size: 14px;
 }
 
-.upper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.report-btn{
-    color: white;
-    border: 2px solid white;
-    background-color: var(--primary-color);
-    padding: 8px 15px;
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    transition: 0.3s ease-in-out;
-}
-
-.report-btn:hover{
+.method-card button {
+    border: none;
+    background: rgba(20, 93, 160, 0.1);
+    color: var(--primary-color);
+    padding: 10px 18px;
+    border-radius: 10px;
     cursor: pointer;
-    scale: 1.03;
 }
 
 

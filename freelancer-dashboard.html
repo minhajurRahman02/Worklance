@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/admin-dashboard.css">
+    <link rel="stylesheet" href="assets/css/freelancer-dashboard.css">
     <link rel="icon" href="assets/images/Worklance_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,20 +37,16 @@
                         <p>Manage Profile</p>
                     </a>
                     <a href="" class="aside-item">
-                        <i class="bi bi-person-check-fill"></i>
-                        <p>Approve Freelancers</p>
-                    </a>
-                    <a href="" class="aside-item">
-                        <i class="bi bi-file-earmark-text-fill"></i>
-                        <p>Approve Clients</p>
+                        <i class="bi bi-search"></i>
+                        <p>Browse Projects</p>
                     </a>
                     <a href="" class="aside-item">
                         <i class="bi bi-star-fill"></i>
-                        <p>Approve Projects</p>
+                        <p>Your Projects</p>
                     </a>
                     <a href="" class="aside-item">
-                        <i class="bi bi-currency-exchange"></i>
-                        <p>Revenue Manage</p>
+                        <i class="bi bi-wallet"></i>
+                        <p>Wallet</p>
                     </a>
                 </div>
             </div>
@@ -62,23 +58,26 @@
 
         <section class="main-content">
             <nav>
-                <p class="heading-font-3">Hello Admin <span style="color: #145DA0;">ABC!</span></p>
+                <p class="heading-font-3">Hello <span style="color: #145DA0;">Mehrab Hossain!</span></p>
                 <div>
                     <label for="search"></label>
                     <input type="text" name="search" id="search" placeholder="Search">
                     <a href="">
+                        <i class="bi bi-chat-fill"></i>
+                    </a>
+                    <a href="">
                         <i class="bi bi-bell-fill"></i>
                     </a>
-                    <a href="admin-profile.html">
-                        <i class="bi bi-person-circle"></i>
-                        <p>Admin ABC</p>
+                    <a href="freelancer-profile.html">
+                        <img src="assets/images/freelancer_profile_image.jpg" alt="">
+                        <p class="regular-font-4">Mehrab Hossain</p>
                     </a>
                 </div>
             </nav>
 
             <div class="project-overview pt-10 mb-15">
                 <div class="pending-projects">
-                    <p class="regular-font-2">Pending Projects</p>
+                    <p class="regular-font-2">Current Projects</p>
                     <br>
                     <div class="pending-project-card-container">
                         <div class="pending-project-card">
@@ -106,7 +105,7 @@
                         </div>
                     </div>
                     <a class="regular-font-4 text-right" href="">
-                        <p class="pt-3 hover:underline">See more</p>
+                        <p class="pt-3 hover:underline">View All</p>
                     </a>
                 </div>
 
@@ -137,7 +136,7 @@
                         </div>
                     </div>
                     <a class="regular-font-4 text-right hover:underline" href="">
-                        <p class="pt-3">See more</p>
+                        <p class="pt-3">View All</p>
                     </a>
                 </div>
             </div>
@@ -145,38 +144,32 @@
             <div class="platform-overview mb-15">
                 <div class="platform-card-container">
                     <div class="platform-card">
-                        <p class="regular-font-4">Total Freelancers</p>
-                        <p class="heading-font-3">25.1k</p>
+                        <p class="regular-font-4">Completed Projects</p>
+                        <p class="heading-font-3">102</p>
                         <a href="">See Details</a>
                     </div>
 
                     <div class="platform-card">
-                        <p class="regular-font-4">Total Clients</p>
-                        <p class="heading-font-3">25.1k</p>
+                        <p class="regular-font-4">Cancelled Projects</p>
+                        <p class="heading-font-3">6</p>
                         <a href="">See Details</a>
                     </div>
 
                     <div class="platform-card">
-                        <p class="regular-font-4">Active Projects</p>
+                        <p class="regular-font-4">Ongoing Projects</p>
                         <p class="heading-font-3">2k</p>
                         <a href="">See Details</a>
                     </div>
 
                     <div class="platform-card">
-                        <p class="regular-font-4">Pending Projects</p>
+                        <p class="regular-font-4">Pending Bids</p>
                         <p class="heading-font-3">1.5k</p>
                         <a href="">See Details</a>
                     </div>
 
                     <div class="platform-card">
-                        <p class="regular-font-4">Total Revenue</p>
-                        <p class="heading-font-3">$205k</p>
-                        <a href="">See Details</a>
-                    </div>
-
-                    <div class="platform-card">
-                        <p class="regular-font-4">Current Revenue</p>
-                        <p class="heading-font-3">$58k</p>
+                        <p class="regular-font-4">Total Earnings</p>
+                        <p class="heading-font-3">$18k</p>
                         <a href="">See Details</a>
                     </div>
                 </div>
@@ -208,7 +201,7 @@
                                     legend: { display: false },
                                     title: {
                                         display: true,
-                                        text: "Month vs. Revenue",
+                                        text: "Month vs. Earning",
                                         font: { size: 15 }
                                     }
                                 }
@@ -220,10 +213,10 @@
                 <div class="generate-report">
                     <div class="upper">
                         <div class="left">
-                            <p class="footer-regular-font">Top Clients</p>
-                            <p class="footer-heading-font-2">82%</p>
-                            <p class="footer-regular-font">Revenue achieved
-                                this month</p>
+                            <p class="footer-regular-font">Top Projects</p>
+                            <p class="footer-heading-font-2">80%</p>
+                            <p class="footer-regular-font">Earning achieved
+                                this month from these projects</p>
                         </div>
                         <div class="right flex">
                             <img src="assets/images/banner-card-img-1.svg" alt="">
@@ -232,7 +225,7 @@
                             <img src="assets/images/banner-card-img-1.svg" alt="">
                         </div>
                     </div>
-                    <button class="report-btn">Generate Revenue Report</button>
+                    <button class="report-btn">Generate Earning Report</button>
                 </div>
             </div>
 

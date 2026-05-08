@@ -43,7 +43,7 @@
     font-weight: 400;
 }
 
-.regular-font-4{
+.regular-font-4 {
     color: var(--faded-font-color);
     font-size: 16px;
     font-weight: 400;
@@ -55,7 +55,7 @@
     font-weight: 500;
 }
 
-.footer-heading-font-2{
+.footer-heading-font-2 {
     color: white;
     font-size: 36px;
     font-weight: 600;
@@ -98,12 +98,12 @@
     cursor: pointer;
 }
 
-main{
+main {
     background-color: var(--primary-color);
     display: flex;
 }
 
-aside{
+aside {
     padding: 30px;
     width: 25%;
     display: flex;
@@ -112,18 +112,18 @@ aside{
 }
 
 
-.aside-img{
+.aside-img {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.aside-content{
+.aside-content {
     padding-top: 20px;
     border-top: 1px solid var(--secondary-color);
 }
 
-aside a{
+aside a {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -133,16 +133,16 @@ aside a{
     transition: 0.3s ease-in-out;
 }
 
-aside a:hover{
+aside a:hover {
     background-color: white;
     color: var(--primary-color);
 }
 
-.aside-logo:hover{
+.aside-logo:hover {
     background-color: var(--primary-color);
 }
 
-.main-content{
+.main-content {
     padding: 30px 40px;
     width: 100%;
     background-color: white;
@@ -150,49 +150,41 @@ aside a:hover{
     border-bottom-left-radius: 15px;
 }
 
-input{
+input {
     background-color: var(--secondary-color);
     padding: 5px 20px;
     border: none;
     border-radius: 20px;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 nav div,
-nav div a{
+nav div a {
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-nav div i{
+nav div i {
     color: var(--primary-color);
     font-size: 30px;
 }
 
-.project-overview{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    justify-items: baseline;
-    align-items: center;
-    gap: 20px;
-}
-
-.pending-projects{
+.approve-client {
     width: 100%;
 }
 
-.pending-project-card-container{
+.approve-client-card-container {
     display: grid;
     gap: 20px;
 }
 
-.pending-project-card{
+.approve-client-card {
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -204,85 +196,25 @@ nav div i{
     text-align: left;
 }
 
-.pending-project-card a:hover{
+.approve-client-card a:hover {
     text-decoration: underline;
 }
 
-.completed-projects{
-    width: 100%;
+.approved {
+    padding: 1px 10px;
+    background-color: rgb(105, 192, 105);
+    border: 1px solid green;
+    color: rgb(0, 85, 0);
+    border-radius: 50px;
 }
 
-
-.platform-card-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
+.rejected {
+    padding: 1px 10px;
+    background-color: rgb(255, 153, 153);
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(131, 0, 0);
+    border-radius: 50px;
 }
-
-.platform-card{
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    text-align: center; 
-}
-
-.platform-card *{
-    padding-bottom: 10px;
-}
-
-.platform-card a{
-    color: var(--primary-color);
-}
-
-.platform-card a:hover{
-    text-decoration: underline;
-}
-
-.bottom-report{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    justify-items: baseline;
-    align-items: center;
-}
-
-.generate-report{
-    background-color: var(--primary-color);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px var(--primary-color);
-}
-
-.generate-report > *{
-    padding-bottom: 30px;
-}
-
-.upper{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.report-btn{
-    color: white;
-    border: 2px solid white;
-    background-color: var(--primary-color);
-    padding: 8px 15px;
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    transition: 0.3s ease-in-out;
-}
-
-.report-btn:hover{
-    cursor: pointer;
-    scale: 1.03;
-}
-
-
 
 
 

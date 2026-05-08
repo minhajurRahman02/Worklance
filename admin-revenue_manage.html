@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/admin-revenue_manage.css">
+    <link rel="icon" href="assets/images/Worklance_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0"></script>
+    <title>About</title>
+</head>
+
+<body>
+
+    <main>
+        <aside class="">
+            <div class="upper-aside">
+                <a class="aside-logo" href="admin-dashboard.html">
+                    <img class="aside-img" src="assets/images/worklance_logo.png" alt="">
+                </a>
+                <div class="aside-content">
+                    <a href="" class="aside-item">
+                        <i class="bi bi-grid-fill"></i>
+                        <p>Dashboard</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-gear-fill"></i>
+                        <p>Manage Profile</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-person-check-fill"></i>
+                        <p>Approve Freelancers</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-file-earmark-text-fill"></i>
+                        <p>Approve Clients</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-star-fill"></i>
+                        <p>Approve Projects</p>
+                    </a>
+                    <a href="" class="aside-item">
+                        <i class="bi bi-currency-exchange"></i>
+                        <p>Revenue Manage</p>
+                    </a>
+                </div>
+            </div>
+            <a class="bottom-aside" href="admin-login.html">
+                <i class="bi bi-box-arrow-right"></i>
+                <p>Sign Out</p>
+            </a>
+        </aside>
+
+        <section class="main-content">
+            <nav class="mb-10">
+                <p class="heading-font-3">User <span style="color: #145DA0;">A-1122334</span></p>
+                <div>
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <a href="">
+                        <i class="bi bi-bell-fill"></i>
+                    </a>
+                    <a href="admin-profile.html">
+                        <i class="bi bi-person-circle"></i>
+                        <p>Admin ABC</p>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="revenue-page">
+
+                <!-- Revenue Overview -->
+                <section class="revenue-overview">
+
+                    <div class="revenue-card">
+                        <p class="card-title">Total Revenue</p>
+                        <h2>$128,450</h2>
+                        <span>+18% from last month</span>
+                    </div>
+
+                    <div class="revenue-card">
+                        <p class="card-title">Platform Commission</p>
+                        <h2>$24,300</h2>
+                        <span>From completed projects</span>
+                    </div>
+
+                    <div class="revenue-card">
+                        <p class="card-title">Pending Transactions</p>
+                        <h2>$6,540</h2>
+                        <span>Awaiting clearance</span>
+                    </div>
+
+                    <div class="revenue-card">
+                        <p class="card-title">Successful Withdrawals</p>
+                        <h2>$82,120</h2>
+                        <span>Processed this year</span>
+                    </div>
+
+                </section>
+
+                <!-- Revenue Analytics -->
+                <section class="analytics-section">
+
+                    <div class="section-header">
+                        <div>
+                            <h2>Revenue Analytics</h2>
+                            <p>Monitor overall platform revenue and growth performance</p>
+                        </div>
+
+                        <select>
+                            <option>Last 6 Months</option>
+                            <option>Last 12 Months</option>
+                        </select>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+
+                </section>
+
+                <!-- Revenue Transactions -->
+                <section class="transactions-section">
+
+                    <div class="section-header">
+                        <div>
+                            <h2>Revenue Transactions</h2>
+                            <p>Track commissions, payments, and withdrawal activities</p>
+                        </div>
+
+                        <button class="primary-btn">
+                            Generate PDF Report
+                        </button>
+                    </div>
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Transaction ID</th>
+                                <th>Project</th>
+                                <th>Client</th>
+                                <th>Freelancer</th>
+                                <th>Commission</th>
+                                <th>Total Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>#REV1201</td>
+                                <td>E-Commerce Website</td>
+                                <td>Sarah Khan</td>
+                                <td>Rahim Ahmed</td>
+                                <td>$45</td>
+                                <td>$450</td>
+                                <td><span class="status completed">Completed</span></td>
+                                <td>14 Mar 2026</td>
+                            </tr>
+
+                            <tr>
+                                <td>#REV1202</td>
+                                <td>Portfolio UI Design</td>
+                                <td>Nusrat Jahan</td>
+                                <td>Tanvir Islam</td>
+                                <td>$18</td>
+                                <td>$180</td>
+                                <td><span class="status pending">Pending</span></td>
+                                <td>15 Mar 2026</td>
+                            </tr>
+
+                            <tr>
+                                <td>#REV1203</td>
+                                <td>AI Dashboard</td>
+                                <td>Fahim Karim</td>
+                                <td>Arif Hossain</td>
+                                <td>$62</td>
+                                <td>$620</td>
+                                <td><span class="status processing">Processing</span></td>
+                                <td>17 Mar 2026</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </section>
+
+                <!-- Bottom Grid -->
+                <section class="bottom-grid">
+
+                    <!-- Commission Settings -->
+                    <div class="commission-card">
+
+                        <div class="section-header">
+                            <div>
+                                <h2>Commission Settings</h2>
+                                <p>Manage platform service charges and commission rates</p>
+                            </div>
+                        </div>
+
+                        <form>
+
+                            <label>Standard Commission Rate</label>
+                            <input type="text" placeholder="10%">
+
+                            <label>Premium Commission Rate</label>
+                            <input type="text" placeholder="5%">
+
+                            <label>Minimum Withdrawal Amount</label>
+                            <input type="text" placeholder="$100">
+
+                            <button class="primary-btn">
+                                Save Changes
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <!-- Revenue Sources -->
+                    <div class="sources-card">
+
+                        <div class="section-header">
+                            <div>
+                                <h2>Revenue Sources</h2>
+                                <p>Platform income breakdown</p>
+                            </div>
+                        </div>
+
+                        <div class="source-item">
+                            <div>
+                                <h4>Project Commissions</h4>
+                                <p>Main platform revenue source</p>
+                            </div>
+
+                            <span>$18,240</span>
+                        </div>
+
+                        <div class="source-item">
+                            <div>
+                                <h4>Premium Memberships</h4>
+                                <p>Monthly subscriptions</p>
+                            </div>
+
+                            <span>$3,820</span>
+                        </div>
+
+                        <div class="source-item">
+                            <div>
+                                <h4>Featured Project Listings</h4>
+                                <p>Boosted visibility services</p>
+                            </div>
+
+                            <span>$2,140</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="px-10 pt-10 pb-5 footer-regular-font">
+        <div class="w-4/5 mx-auto upper-footer pb-20">
+            <a href="">
+                <img class="footer-img" src="assets/images/worklance_logo.png" alt="">
+            </a>
+            <div class="footer-col-1">
+                <p class="footer-heading-font pb-4">Platform</p>
+                <ul>
+                    <li><a href="">Find Freelancers</a></li>
+                    <li><a href="">Browse Jobs</a></li>
+                    <li><a href="">How It Works</a></li>
+                    <li><a href="">Post a Project</a></li>
+                    <li><a href="">Explore Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-2">
+                <p class="footer-heading-font pb-4">Support & Company</p>
+                <ul>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Report an Issue</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <p class="footer-heading-font pb-2">Subscribe</p>
+                <div class="flex items-center gap-2">
+                    <input class="footer-input" type="email" placeholder="typeYourMail@Email.com">
+                    <i class="bi bi-send-fill"></i>
+                </div>
+                <p>Join our newsletter to stay up to date on features and releases</p>
+            </div>
+        </div>
+        <div class="w-4/5 mx-auto lower-footer">
+            <div class="footer-line mb-5"></div>
+            <div class="footer-bottom flex justify-between items-center">
+                <p class="copyright">&copy; 2026 Worklance. All rights reserved.</p>
+                <div class="social-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-messenger"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-envelope-at-fill"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        const revenueCtx = document.getElementById('revenueChart');
+
+        new Chart(revenueCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Platform Revenue',
+                    data: [12000, 18500, 16000, 24000, 21000, 28450],
+                    backgroundColor: '#145DA0',
+                    borderRadius: 10
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+    </script>
+</body>
+
+</html>
